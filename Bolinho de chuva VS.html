@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Bolinho de chuva - Tudo Gostoso</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #ff6a28;
+            text-align: center;
+            padding: 10px;
+        }
+        .container {
+            width: 850px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        main {
+            background-color: #ffffff;
+            padding: 5px;
+        }
+        h1 {
+            color: #ff6a28;
+            font-size: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            text-align: left;
+            margin-top: 10px;
+        }
+        .icon {
+            width: 25px;
+            height: 25px;
+            padding: 10px;
+            margin: 5px;
+        }
+        .titulo {
+            display: inline-flex;
+        }
+        iframe {
+            position: center;
+        }  
+        h2 {
+            font-family:sans-serif;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #ff6a28;
+            text-align: center;
+        } 
+        h3 {
+            font-family:sans-serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #161616;
+            text-align: center;
+            background-color: #c9c9c9;
+            padding: 15px;
+            margin: 10px
+        }
+        p {
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        .receita {
+            margin-top: 5%;
+        }
+        table, th, td {
+            padding: 10px;
+            border: 10px;
+            border: 1px solid #ff6a28;
+        }
+        .clock {
+            padding-right: 5px;
+        }
+        .tabletitle {
+            padding: 10px;
+            margin: 10px;
+        }
+        th {
+            padding: 10px;
+        }
+        td {
+            padding: 10px;
+            padding-top: 0;
+            padding-bottom: 0;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: unset;
+        }
+        .data {
+            color: #ff6a28;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            margin-left: 225px;
+            position: center;
+            margin-top: 10px;
+        }
+        iframe {
+            margin-left: 100px;
+        }
+    </style>
+  </head>
+  <body>
+      <header>
+          <div class="container">
+              <img src="https://img.itdg.com.br/tdg/assets/layout/logos/logo-v4.png">
+          </div>
+      </header>
+      <div>
+          <main class="container">
+                <section>
+                    <article>
+                        <div class="titulo">
+                            <h1>Bolinho de chuva</h1>
+                            <img class="icon" src="data:image/png;base64,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">
+                        </div>
+                        <div>
+                            <iframe width="642" height="361" src="https://www.youtube.com/embed/2Fd1LhcXsCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <table>
+                                <tr class="tableicons">
+                                    <th> <img width="25px" class="clock" src="https://www.pngitem.com/pimgs/m/79-796423_orange-clock-png-icons-transparent-png.png"> </th>
+                                    <th> <img width="25px" class="menu" src="data:image/png;base64,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" > </th>
+                                    <th> <img width="25px" class="favorite" src="data:image/png;base64,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"> </th>
+                                    <th> <img width="25px" class="commentary" src="data:image/png;base64,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"> </th>
+                                </tr>
+                                <tr class="tabletitle">
+                                    <td>Preparo</td>
+                                    <td>Rendimento</td>
+                                    <td>Favoritos</td>
+                                    <td>Comentários</td>
+                                </tr>
+                                <tr class="data">
+                                    <td>30 min</td>
+                                    <td>8 porções</td>
+                                    <td>108.108</td>
+                                    <td>2227</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div class="receita">
+                            <h2>Ingredientes</h2>
+                                <ul>
+                                    <li>2 ovos</li>
+                                    <li>1 xícara de açúcar</li>
+                                    <li>1 xícara (chá) de leite</li>
+                                    <li>2 e 1/2 xícaras de farinha de trigo</li>
+                                    <li>1 colher (sopa) de fermento em pó</li>
+                                    <li>3 colheres (sopa) de açúcar para polvilhar</li>
+                                    <li>1 colher (sopa) de canela para polvilhar</li>
+                                    <li>1 litro de óleo para fritar</li>
+                                </ul>
+                            <h2>Modo de preparo</h2>
+                                <ol>
+                                    <li>Misture todos os ingredientes até obter uma massa cremosa e homogênea</li>
+                                    <li>Deixe aquecer uma panela com bastante óleo para que os bolinhos possam boiar</li>
+                                    <li>Quando o óleo estiver bem quente (180º C), com uma colher, comece a colocar pequenas quantidades de massa, e frite até que dourem por inteiro</li>
+                                    <li>Coloque os bolinhos sobre papel absorvente e depois passe-os no açúcar com canela</li>
+                                </ol>
+                            <h3>Informações adicionais</h3>
+                            <p>Muita gente fica na dúvida de como fazer bolinho de chuva sequinho e o segredo é simples: adicionar um pouco de amido de milho na massa.
+                               E sabia que também existem outros tipos de bolinho de chuva, como bolinho de chuva de banana e até bolinho de chuva salgado? Para fazer essa iguaria, você só precisa tirar o açúcar da massa e ao invés de açúcar e canela, polvilhar no bolinho de chuva simples uma mistura de especiarias como curry indiano.
+                               Outra dica é que essa massa pode servir de base para várias delícias, como os donuts caseiros, sabia?
+                                
+                                Bolinho de chuva é uma delícia acompanhado de uma boa xícara de café na hora do lanche, não é mesmo? Confira outras delícias doces e salgadas do TudoGostoso para a hora do lanche: crepioca, cueca virada, bolo de milho, pão caseiro fácil, pão de queijo, biscoito amanteigado, bolo de cenoura, broa de milho, bolo de fubá com goiabada, cookie americano e muito mais! 
+                                
+                                Apure os sentidos e bom apetite!</p>
+                        </div>
+                    </article>
+                </section>
+          </main>
+      </div>
+  </body>
+</html>
